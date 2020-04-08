@@ -38,7 +38,7 @@ def f3(xs: List[BinStr]) -> bool:
              1, 4, 2, 1, 2, 6, 6, 7, 5, 7, 3, 4, 3, 2, 0, 2, 0, 6, 0, 1, 0, 1, 0, 1, 0, 0, 3, 0, 6]
     x3 = xs[2]
     x1x2 = xs[0] + xs[1]
-    sx = toBinary(sVals[toInt(x1x2)], 2*numBits)
+    sx = toBinary(sVals[toInt(x1x2)], numBits)
     return binaryDot(sx, x3)
 
 # s = [True, False, False]
@@ -48,7 +48,7 @@ def f4(xs: List[BinStr]) -> bool:
              7, 4, 5, 1, 6, 3, 5, 4, 5, 6, 3, 2, 1, 4, 2, 3, 2, 6, 6, 1, 5, 2, 4, 3, 6, 5, 7, 2, 1]
     x3 = xs[2]
     x1x2 = xs[0] + xs[1]
-    sx = toBinary(sVals[toInt(x1x2)], 2*numBits)
+    sx = toBinary(sVals[toInt(x1x2)], numBits)
     return binaryDot(sx, x3)
 
 
@@ -75,7 +75,7 @@ def f5(xs: List[BinStr]) -> bool:
              0, 4, 4, 0, 0, 5, 2, 0, 0, 1, 0, 3, 3, 0, 6, 0, 4, 0, 0, 5, 0, 7]
     x4 = xs[3]
     x1x2x3 = xs[0] + xs[1] + xs[2]
-    sx = toBinary(sVals[toInt(x1x2x3)], 3*numBits)
+    sx = toBinary(sVals[toInt(x1x2x3)], numBits)
     return binaryDot(sx, x4)
 
 
@@ -99,5 +99,5 @@ def f6(xs: List[BinStr]) -> bool:
              5, 0, 6, 0, 4, 0, 1, 1, 1, 4, 4, 2, 6, 2, 6, 4, 5, 6, 4, 3, 2, 4]
     x4 = xs[3]
     x1x2x3 = xs[0] + xs[1] + xs[2]
-    sx = toBinary(sVals[toInt(x1x2x3)], 3*numBits)
+    sx = toBinary(sVals[toInt(x1x2x3)], numBits)
     return binaryDot(sx, x4)
