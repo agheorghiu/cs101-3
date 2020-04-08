@@ -1,6 +1,5 @@
 from interf import *
 from helpers import *
-import random as random
 
 
 # Note below that the value of numBits changes; make sure to account for this when you test your implementation
