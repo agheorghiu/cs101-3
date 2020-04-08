@@ -13,7 +13,7 @@ def interf1(fun: Callable[[Any], int], domain: List[Any], norm: int) -> bool:
         return False
     return random.choice([True, False])
 
-def interf2(fun: Callable[[Any], int], transf: Callable[[Any, Any], int], domain: List[Any]) -> Any:
+def interf2(fun: Callable[[Any], int], transf: Callable[[Any, Any], float], domain: List[Any]) -> Any:
     probs = [abs(sum(map(lambda x: fun(x) * transf(x, y), domain))) for y in domain]
     probs = np.true_divide(np.array(probs), sum(probs))
     if (math.isclose(sum(probs), 1, rel_tol=1e-15)):
