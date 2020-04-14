@@ -1,8 +1,8 @@
 from helpers import *
 
 def simon1(x: BinStr) -> BinStr:
-    # [1, 1, 0, 0, 0]
-    s = [True, True, False, False, False]
+    # [0, 1, 0, 0, 0]
+    s = [False, True, False, False, False]
     x1 = toInt(x)
     x2 = toInt(binaryAdd(s, x))
     smallx = toBinary(min(x1, x2))
@@ -17,8 +17,8 @@ def simon2(x: BinStr) -> BinStr:
     return binaryAdd(rotate(binaryAdd(smallx, toBinary(23)), 3), toBinary(17))
 
 def simon3(x: BinStr) -> BinStr:
-    # [1, 1, 0, 1, 1]
-    s = [True, True, False, True, True]
+    # [1, 0, 1, 1, 1]
+    s = [True, False, True, True, True]
     x1 = toInt(x)
     x2 = toInt(binaryAdd(s, x))
     smallx = toBinary(min(x1, x2))
@@ -40,7 +40,7 @@ def simonSolver(f: Callable[[BinStr], BinStr]) -> BinStr:
     while (not ok):
         so = interf2(fun, T, newDomain)
         sperp = so[0]
-        if (sperp not in orthVectors):
+        if (isLinIndep(orthVectors + [sperp])):
             orthVectors.append(sperp)
         if (len(orthVectors) == numBits - 1):
             ok = True
@@ -49,8 +49,11 @@ def simonSolver(f: Callable[[BinStr], BinStr]) -> BinStr:
     orthVectors = list(map(lambda x: list(map(int, x)), orthVectors))
 
     # uncomment this to see the vectors it found
-    #print(orthVectors)
-    return gauss(orthVectors)
+    # print(orthVectors)
+
+    return simonSysSolver(orthVectors)
 
 
+print(simonSolver(simon1))
+print(simonSolver(simon2))
 print(simonSolver(simon3))
