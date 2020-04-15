@@ -4,25 +4,42 @@ from helpers import *
 
 # Note below that the value of numBits changes; make sure to account for this when you test your implementation
 
+numBits = 3
+
+# s = [True, False, True]
+# g(s) = 1
+def f1(x: BinStr, y: BinStr) -> bool:
+    sVals = [0, 4, 0, 4, 4, 0, 6, 7]
+    sx = toBinary(sVals[toInt(x)], numBits)
+    return binaryDot(sx, y)
+
+# s = [True, True, True]
+# g(s) = 0
+def f2(x: BinStr, y: BinStr) -> bool:
+    sVals = [7, 1, 6, 0, 6, 7, 0, 3]
+    sx = toBinary(sVals[toInt(x)], numBits)
+    return binaryDot(sx, y)
+
+
 numBits = 5
 
 #s = [True, True, False, True, False]
 # g(s) = 0
-def f1(x: BinStr, y: BinStr) -> bool:
+def f3(x: BinStr, y: BinStr) -> bool:
     sVals = [0, 25, 20, 3, 7, 14, 5, 12, 4, 9, 19, 0, 29, 8, 22, 14, 5, 18, 22, 22, 18, 5, 25, 11, 28, 0, 8, 3, 28, 7, 20, 3]
     sx = toBinary(sVals[toInt(x)], numBits)
     return binaryDot(sx, y)
 
 #s = [True, False, False, False, True]
 # g(s) = 1
-def f2(x: BinStr, y: BinStr) -> bool:
+def f4(x: BinStr, y: BinStr) -> bool:
     sVals = [7, 24, 21, 4, 21, 1, 26, 15, 22, 2, 7, 27, 25, 4, 0, 23, 12, 26, 20, 14, 9, 22, 31, 14, 2, 11, 30, 19, 23, 14, 20, 14]
     sx = toBinary(sVals[toInt(x)], numBits)
     return binaryDot(sx, y)
 
 #s = [True, True, True, False, True]
 # g(s) = 1
-def f3(x: BinStr, y: BinStr) -> bool:
+def f5(x: BinStr, y: BinStr) -> bool:
     sVals = [0, 18, 11, 5, 2, 7, 5, 25, 20, 0, 31, 7, 13, 8, 25, 17, 20, 28, 18, 13, 11, 1, 22, 30, 26, 5, 11, 3, 20, 25, 2, 0]
     sx = toBinary(sVals[toInt(x)], numBits)
     return binaryDot(sx, y)
@@ -33,7 +50,7 @@ numBits = 6
 
 #s = [False, True, True, True, False, True]
 # g(s) = 1
-def f4(x: BinStr, y: BinStr) -> bool:
+def f6(x: BinStr, y: BinStr) -> bool:
     sVals = [41, 24, 0, 31, 47, 44, 32, 7, 54, 42, 10, 19, 13, 62, 52, 3, 20, 7, 33, 14, 11, 1, 41, 9, 52, 54, 28, 62,
              60, 7, 59, 37, 49, 4, 19, 30, 33, 38, 47, 37, 45, 41, 48, 49, 7, 43, 7, 55, 3, 13, 16, 63, 7, 27, 7, 20,
              37, 29, 21, 8, 3, 44, 29, 7]
