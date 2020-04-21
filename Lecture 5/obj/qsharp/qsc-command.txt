@@ -1,0 +1,13 @@
+:: files ::
+Operations.qs
+:: qsim ::
+:: references ::
+/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.simulators/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Intrinsic.dll
+/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.simulators/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Simulation.Common.dll
+/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.simulators/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Simulation.Core.dll
+/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.simulators/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.dll
+/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.simulators/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Simulators.dll
+/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.standard/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Standard.dll
+/Users/andrugheorghiu/.nuget/packages/newtonsoft.json/11.0.2/lib/netstandard2.0/Newtonsoft.Json.dll
+:: command ::
+dotnet "/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.development.kit/0.6.1905.301/build/../tools/qsc/qsc.dll" build --format MsBuild  --input "Operations.qs" --references "/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.simulators/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Intrinsic.dll" "/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.simulators/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Simulation.Common.dll" "/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.simulators/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Simulation.Core.dll" "/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.simulators/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.dll" "/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.simulators/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Simulators.dll" "/Users/andrugheorghiu/.nuget/packages/microsoft.quantum.standard/0.6.1905.301/lib/netstandard2.0/Microsoft.Quantum.Standard.dll" "/Users/andrugheorghiu/.nuget/packages/newtonsoft.json/11.0.2/lib/netstandard2.0/Newtonsoft.Json.dll" --output obj/qsharp/src/

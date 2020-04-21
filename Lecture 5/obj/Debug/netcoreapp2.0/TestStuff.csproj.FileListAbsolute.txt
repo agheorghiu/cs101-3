@@ -1,0 +1,11 @@
+/Users/andrugheorghiu/git/q-code/TestStuff/obj/Debug/netcoreapp2.0/TestStuff.csprojAssemblyReference.cache
+/Users/andrugheorghiu/git/q-code/TestStuff/obj/Debug/netcoreapp2.0/TestStuff.csproj.CoreCompileInputs.cache
+/Users/andrugheorghiu/git/q-code/TestStuff/bin/Debug/netcoreapp2.0/TestStuff.deps.json
+/Users/andrugheorghiu/git/q-code/TestStuff/bin/Debug/netcoreapp2.0/TestStuff.runtimeconfig.json
+/Users/andrugheorghiu/git/q-code/TestStuff/bin/Debug/netcoreapp2.0/TestStuff.runtimeconfig.dev.json
+/Users/andrugheorghiu/git/q-code/TestStuff/bin/Debug/netcoreapp2.0/TestStuff.dll
+/Users/andrugheorghiu/git/q-code/TestStuff/bin/Debug/netcoreapp2.0/TestStuff.pdb
+/Users/andrugheorghiu/git/q-code/TestStuff/obj/Debug/netcoreapp2.0/TestStuff.AssemblyInfoInputs.cache
+/Users/andrugheorghiu/git/q-code/TestStuff/obj/Debug/netcoreapp2.0/TestStuff.AssemblyInfo.cs
+/Users/andrugheorghiu/git/q-code/TestStuff/obj/Debug/netcoreapp2.0/TestStuff.dll
+/Users/andrugheorghiu/git/q-code/TestStuff/obj/Debug/netcoreapp2.0/TestStuff.pdb
