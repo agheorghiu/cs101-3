@@ -65,8 +65,7 @@ namespace MyAlgorithms
 
     // s = 100..0
     operation simonOracle1(qs: Qubit[]): Unit {
-        let m = Length(qs);
-        let n = m / 2;
+        let n = Length(qs) / 2;
 
         for (i in 1 .. n - 1) {
             CNOT(qs[i], qs[n + i]);
@@ -75,8 +74,7 @@ namespace MyAlgorithms
 
     // s = 000..1
     operation simonOracle2(qs: Qubit[]): Unit {
-        let m = Length(qs);
-        let n = m / 2;
+        let n = Length(qs) / 2;
 
         for (i in 0 .. n - 2) {
             CNOT(qs[i], qs[n + i]);
@@ -85,7 +83,6 @@ namespace MyAlgorithms
 
 
     operation simonSolution(qs: Qubit[], oracle: (Qubit[] => Unit)): Unit {
-        let m = Length(qs);
         let n = Length(qs) / 2;
 
         ApplyToEach(H, qs[0 .. n - 1]); // sum_x |x>|0>

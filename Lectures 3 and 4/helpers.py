@@ -37,7 +37,7 @@ def rregf2(lst: List[BinStr]) -> np.ndarray:
     return mat
 
 # check for linear independence
-def isLinIndep(lst: BinStr) -> bool:
+def isLinIndep(lst: List[BinStr]) -> bool:
     reduced = rregf2(lst)
     return np.linalg.matrix_rank(reduced) == len(lst)
 
