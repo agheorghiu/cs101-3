@@ -86,9 +86,7 @@ def quantumOrderFinder(g: int, N: int) -> int:
 def factor(N: int) -> (int, int):
     numRuns = 3
 
-    orders = []
-
-    for i in range(numRuns):
+    for _ in range(numRuns):
         r = np.random.randint(2, N - 1)
         div = math.gcd(r, N)
         if (div > 1):
