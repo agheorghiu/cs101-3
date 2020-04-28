@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/opt/anaconda3/envs/ibm/bin/python",
+    "PATH": "/opt/anaconda3/envs/ibm/bin:/opt/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:~/.dotnet/tools:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+}
