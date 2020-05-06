@@ -9,13 +9,18 @@ domain = list(map(lambda x: toBinary(x, numBits), range(2 ** numBits)))
 
 ### Task 1 - interf1from2
 
-# We're assuming norm is such that S = 1/norm | \sum_x f(x) | is normalized
-def interf1from2(fun: Callable[[Any], int], domain: List[Any], norm: int) -> bool:
+# We're assuming norm is such that S = 1/norm | \sum_x f(x) | is in [0, 1]
+def interf1from2(fun: Callable[[Any], int], domain: List[Any], norm: float) -> bool:
     n = len(domain)
 
-    # if domain has only one element, we're done (sum has to be normalized)
+    # if domain has only one element, we just need to check whether 1/norm is > 2/3 or < 1/3
     if (n == 1):
-        return True
+        if (norm <= 3/2):
+            return True
+        if (norm >= 3):
+            return False
+        return random.choice([True, False])
+
 
     # otherwise, fix 2 elements from the domain one for the > 2/3 result and one for the < 1/3 result
     y0 = domain[0]
