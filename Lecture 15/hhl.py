@@ -77,20 +77,3 @@ results = list(map(lambda pair: pair[1][0], filter(lambda pair: pair[0] == 0, re
 
 print(results)
 print([results.count(0) / len(results), results.count(1) / len(results)])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
